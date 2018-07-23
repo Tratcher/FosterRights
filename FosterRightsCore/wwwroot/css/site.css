@@ -12,19 +12,19 @@ body {
 }
 
 
-/*Use light grey colors for navigation bar*/
-a {
-    color: #333333;
-}
+/*Use light grey colors for navigation*/
 .active {
     background-color: #d0d0d0;
 }
-.navbar-default {
-    background-color: white;
+li a {
+    color: #333333;
 }
-a:hover {
+li a :hover {
     background-color: #dadada;
     color: #333333;
+}
+.navbar-default {
+    background-color: white;
 }
 .navbar-collapse {
     padding-left: 0px;
@@ -73,4 +73,18 @@ a:hover {
     .carousel-caption {
         display: none;
     }
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 15px;
 }
