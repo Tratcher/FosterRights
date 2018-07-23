@@ -18,6 +18,23 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-header col-sm-12">
+            <h1>Your Rights, Your Life</h1>
+        </div>
+        <script>
+            (function() {
+                var cx = '007992560897023614041:gabknweyqpc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
+    <div class="container">
         <nav class="navbar navbar-default col-sm-3">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,7 +46,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav flex-columnn" role="navigation">
-                    <li><a asp-page="/Index" class="active">Introduction</a></li>
+                    <li><a asp-page="/Index">Introduction</a></li>
                     <li><a asp-page="/Complaint">File a Complaint</a></li>
                     <li><a asp-page="/Safety">Safety and Well-Being</a></li>
                     <li><a asp-page="/Court">Court Proceedings</a></li>
@@ -51,7 +68,7 @@
             @RenderBody()
             <hr />
             <footer>
-                <p>&copy; 2018 - FosterRightsCore</p>
+                <p>&copy; 2018 - MockingbirdSociety.org</p>
             </footer>
         </div>
     </div>
@@ -76,7 +93,6 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
     @RenderSection("Scripts", required: false)
 </body>
 </html>
