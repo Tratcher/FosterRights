@@ -1,7 +1,6 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -35,6 +34,18 @@ a:hover {
     padding-left: 0px;
     padding-right: 0px;
 }
+.page-header {
+    background: linear-gradient(#9C6EBD, white);
+    border-radius: 4px;
+    height: 85px;
+}
+@media (max-width: 768px) {
+    .header-text {
+        position: relative;
+        top: 20%;
+    }
+}
+
 
 /*Use dark colors for navigation bar*/
 
