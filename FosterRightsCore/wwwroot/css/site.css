@@ -12,9 +12,33 @@ body {
     padding-right: 15px;
 }
 
-.active {
-    color: red;
+
+/*Use light grey colors for navigation*/
+a {
+    color: #333333;
 }
+.active {
+    background-color: #d0d0d0;
+}
+.navbar-default {
+    background-color: white;
+}
+a:hover {
+    background-color: #dadada;
+    color: #333333;
+}
+.navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-sm-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*Use dark colors for navigation*/
+
+
 
 /* Carousel */
 .carousel-caption p {
