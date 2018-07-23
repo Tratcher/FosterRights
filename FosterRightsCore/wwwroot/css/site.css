@@ -14,11 +14,11 @@ body {
 
 
 /*Use light grey colors for navigation*/
+.active {
+    background-color: #d0d0d0;
+}
 li a {
     color: #333333;
-}
-li a .active {
-    background-color: #d0d0d0;
 }
 li a :hover {
     background-color: #dadada;
