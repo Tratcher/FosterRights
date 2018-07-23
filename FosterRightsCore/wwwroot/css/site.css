@@ -14,18 +14,18 @@ body {
 
 
 /*Use light grey colors for navigation*/
-a {
+li a {
     color: #333333;
 }
-.active {
+li a .active {
     background-color: #d0d0d0;
+}
+li a :hover {
+    background-color: #dadada;
+    color: #333333;
 }
 .navbar-default {
     background-color: white;
-}
-a:hover {
-    background-color: #dadada;
-    color: #333333;
 }
 .navbar-collapse {
     padding-left: 0px;
