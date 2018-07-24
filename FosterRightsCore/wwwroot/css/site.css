@@ -40,7 +40,8 @@ li a :hover {
 
 /* page header*/
 .page-header {
-    background: linear-gradient(#9C6EBD, white);
+    background-color: #9C6EBD;
+    color: white;
     border-radius: 4px;
     height: 85px;
 }
