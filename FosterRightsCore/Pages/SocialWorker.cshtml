@@ -2,7 +2,13 @@
 @{
     ViewData["Title"] = "Social Worker";
 }
-<ol class="breadcrumb">
-    <li><a asp-page="/Index">Choose your role</a></li>
-    <li class="active"><a asp-page="/SocialWorker">Social Worker</a></li>
-</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <a asp-page="/Caseworker" class="btn btn-large btn-primary">Caseworker Responsibilities</a>
+        </div>
+        <div class="col-sm-6">
+            <a asp-page="/Placement" class="btn btn-large btn-primary">Placement and Visitation</a>
+        </div>
+    </div>
+</div>
