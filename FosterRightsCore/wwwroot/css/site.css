@@ -103,3 +103,20 @@ h5,
 h6 {
     font-size: 15px;
 }
+
+.btn-card {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    margin: 6px auto;
+    white-space: initial;
+    width: 155px;
+}
+
+@media screen and (min-width: 990px) {
+    .btn-card {
+        width: 180px;   
+    }
+}
