@@ -37,10 +37,6 @@
     <div class="container">
         <div class="container body-content col-sm-9">
             @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; 2018 - MockingbirdSociety.org</p>
-            </footer>
         </div>
         <nav class="navbar navbar-default col-sm-3">
             <div class="navbar-header">
@@ -92,5 +88,13 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
     @RenderSection("Scripts", required: false)
+    <hr />
+    <p class="small" style="margin-top: 36px">Disclaimer: This website is intended as a practical guide for youth in foster care. Although it refers to laws and policies that may affect
+foster youth, it does not provide legal advice and the information in the manual should not be used or relied upon as legal advice. A
+youth who wants to know how laws or policies apply to a specific situation should contact his or her attorney, caseworker, or Guardian
+Ad Litem (GAL), or the Office of the Family and Children's Ombuds.</p>
+    <footer>
+        <p>&copy; 2018 - MockingbirdSociety.org</p>
+    </footer>
 </body>
 </html>
