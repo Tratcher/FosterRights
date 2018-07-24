@@ -115,7 +115,7 @@ h6 {
     width: 155px;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1200px) {
     .btn-card {
         width: 180px;   
     }
