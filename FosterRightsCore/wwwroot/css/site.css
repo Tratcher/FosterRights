@@ -12,7 +12,7 @@ body {
 }
 
 
-/*Use light grey colors for navigation*/
+/*Use light colors for navigation bar*/
 .active {
     background-color: #d0d0d0;
 }
@@ -34,10 +34,19 @@ li a :hover {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/*Use dark colors for navigation bar*/
+
+
+/* page header*/
 .page-header {
     background: linear-gradient(#9C6EBD, white);
     border-radius: 4px;
     height: 85px;
+}
+.header-text {
+    width: 70%;
+    float: left;
 }
 @media (max-width: 768px) {
     .header-text {
@@ -45,10 +54,12 @@ li a :hover {
         top: 20%;
     }
 }
-
-
-/*Use dark colors for navigation bar*/
-
+#___gcse_0 {
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 15%;
+}
 
 
 /* Carousel */
