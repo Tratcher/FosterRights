@@ -13,7 +13,7 @@
     <Content Update="Pages\FosterParent.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Pages\SocialWorker - Copy.cshtml">
+    <Content Update="Pages\Attorney.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Pages\SocialWorker.cshtml">
