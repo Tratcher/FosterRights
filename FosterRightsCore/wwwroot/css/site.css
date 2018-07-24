@@ -1,7 +1,6 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -13,7 +12,7 @@ body {
 }
 
 
-/*Use light grey colors for navigation*/
+/*Use light colors for navigation bar*/
 .active {
     background-color: #d0d0d0;
 }
@@ -38,6 +37,29 @@ li a :hover {
 
 /*Use dark colors for navigation bar*/
 
+
+/* page header*/
+.page-header {
+    background: linear-gradient(#9C6EBD, white);
+    border-radius: 4px;
+    height: 85px;
+}
+.header-text {
+    width: 70%;
+    float: left;
+}
+@media (max-width: 768px) {
+    .header-text {
+        position: relative;
+        top: 20%;
+    }
+}
+#___gcse_0 {
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 15%;
+}
 
 
 /* Carousel */
