@@ -37,36 +37,49 @@ li a :hover {
 
 /*Use dark colors for navigation bar*/
 
-
 /* page header*/
 .page-header {
     background-color: #9C6EBD;
-    color: white;
     border-radius: 4px;
-    height: 85px;
+    color: white;
+    margin-top: 0;
+    padding: 15px;
 }
-.header-text {
-    width: 70%;
-    float: left;
+
+.page-header .col-md-6 {
+    padding: 0;
 }
+
+.header-text:hover {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .header-text {
         position: relative;
         top: 20%;
     }
 }
-#___gcse_0 {
-    width: 30%;
-    float: left;
-    position: relative;
-    top: 15%;
-}
+
 #gs_tti50 {
     color: #333333;
 }
 
+.gsib_b .gsst_a {
+    align-self: center;
+    display: flex;
+    padding-top: 3px;
+}
+
+.gsc-control-cse.gsc-control-cse-en {
+    padding: 12px 0;
+}
 
 /* Carousel */
+.carousel {
+    margin-top: 18px;
+}
+
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
@@ -115,8 +128,14 @@ h6 {
     width: 155px;
 }
 
+@media screen and (min-width: 767px) {
+    .page-header {
+        margin-top: 20px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-card {
-        width: 180px;   
+        width: 180px;
     }
 }

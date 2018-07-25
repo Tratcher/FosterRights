@@ -17,9 +17,11 @@
     </environment>
 </head>
 <body>
-    <div class="container">
-        <div class="page-header col-sm-12">
+    <div class="container page-header">
+        <div class="col-sm-7 col-md-8">
             <a asp-page="/Index" class="h2 header-text">Washington State Foster Rights</a>
+        </div>
+        <div class="col-sm-5 col-md-4">
             <gcse:search></gcse:search>
         </div>
         <script>
@@ -124,7 +126,7 @@
     @RenderSection("Scripts", required: false)
     <hr />
     <div class="container">
-        <div class="row">
+        <div class="row col-xs-12">
             <p class="small" style="margin-top: 36px">Disclaimer: This website is intended as a practical guide for youth in foster care. Although it refers to laws and policies that may affect
     foster youth, it does not provide legal advice and the information in the manual should not be used or relied upon as legal advice. A
     youth who wants to know how laws or policies apply to a specific situation should contact his or her attorney, caseworker, or Guardian
