@@ -42,7 +42,7 @@
                 @if (string.Compare((string)@ViewData["Title"], "Your Rights, Your Life") != 0)
                 {
                 <ol class="breadcrumb">
-                    <li><a asp-page="/Index">Choose your role</a></li>
+                    <li><a asp-page="/Index">Introduction</a></li>
                     @if (!string.IsNullOrEmpty((string)ViewData["role"]))
                     {
                         @if (string.Compare((string)@ViewData["role"], "FosterParent") == 0)
