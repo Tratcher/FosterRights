@@ -82,6 +82,12 @@ li a :hover {
     color: #333333;
 }
 
+.rolepageheader {
+    padding-bottom:20px;
+    padding-top:15px;
+    font-size:20px;
+}
+
 /* Carousel */
 .carousel {
     margin-top: 18px;
@@ -107,6 +113,9 @@ li a :hover {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+    .page-header {
+        display: block;
     }
 }
 
@@ -138,6 +147,7 @@ h6 {
     .page-header {
         margin-top: 20px;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
