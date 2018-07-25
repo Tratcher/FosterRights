@@ -37,7 +37,6 @@ li a :hover {
 
 /*Use dark colors for navigation bar*/
 
-
 /* page header*/
 .page-header {
     background-color: #9C6EBD;
@@ -49,6 +48,10 @@ li a :hover {
 
 .page-header .col-md-6 {
     padding: 0;
+}
+
+.header-text:hover {
+    color: #fff;
 }
 
 @media (max-width: 768px) {
