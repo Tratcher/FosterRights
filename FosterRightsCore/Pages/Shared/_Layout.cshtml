@@ -35,20 +35,15 @@
         </script>
     </div>
     <div class="container">
-        <div class="container">
+        <div class="container col-sm-12">
             <div class="row">
-                <div class="col-sm-12">
-                    <ol class="breadcrumb">
-                        <li><a asp-page="/Index">Choose your role</a></li>
-                        <li class="active"><a asp-page="/SocialWorker">Social Worker</a></li>
-                    </ol>
-                </div>
+                <ol class="breadcrumb">
+                    <li><a asp-page="/Index">Choose your role</a></li>
+                    <li class="active"><a asp-page="/SocialWorker">Social Worker</a></li>
+                </ol>
             </div>
         </div>
-        <div class="container body-content col-sm-9">
-            @RenderBody()
-        </div>
-        <nav class="navbar navbar-default col-sm-3">
+        <nav class="navbar navbar-default col-sm-3 col-sm-push-9">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -74,6 +69,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="container body-content col-sm-9 col-sm-pull-3">
+            @RenderBody()
+        </div>
         <partial name="_CookieConsentPartial" />
     </div>
 
