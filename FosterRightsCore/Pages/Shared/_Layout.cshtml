@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="Manifest.appcache">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="false" />
     </environment>
 </head>
 <body>
@@ -41,18 +41,33 @@
             <div class="row">
                 @if (string.Compare((string)@ViewData["Title"], "Your Rights, Your Life") != 0)
                 {
-                    <ol class="breadcrumb">
-
-                        <li><a asp-page="/Index">Choose your role</a></li>
-                        @if (!string.IsNullOrEmpty((string)ViewData["role"]))
+                <ol class="breadcrumb">
+                    <li><a asp-page="/Index">Introduction</a></li>
+                    @if (!string.IsNullOrEmpty((string)ViewData["role"]))
+                    {
+                        @if (string.Compare((string)@ViewData["role"], "FosterParent") == 0)
                         {
-                            <li><a asp-page="/@ViewData["role"]">@ViewData["role"]</a></li>
+                            ViewData["rolepretty"] = "Foster Parent";
                         }
-                        <li><a>@ViewData["Title"]</a></li>
-                      
-                    </ol>
+                        else if (string.Compare((string)@ViewData["role"], "SocialWorker") == 0)
+                        {
+                            ViewData["rolepretty"] = "Social Worker";
+                        }
+                        else if (string.Compare((string)@ViewData["role"], "FosterYouth") == 0)
+                        {
+                            ViewData["rolepretty"] = "Foster Youth";
+                        }
+                        else
+                        {
+                            ViewData["rolepretty"] = ViewData["role"];
+                        }
+                        <li><a asp-page="/@ViewData["role"]">@ViewData["rolepretty"]</a></li>
+                    }
+                    <li><a>@ViewData["Title"]</a></li>
+                </ol>
                 }
-                </div>    
+                </div>
+
         </div>
         <nav class="navbar navbar-default col-sm-3 col-sm-push-9">
             <div class="navbar-header">
@@ -106,7 +121,7 @@
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="false"></script>
     </environment>
     @RenderSection("Scripts", required: false)
     <hr />
