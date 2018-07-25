@@ -39,15 +39,20 @@
     <div class="container">
         <div class="container col-sm-12">
             <div class="row">
-                @if (!string.IsNullOrEmpty((string)ViewData["role"]))
+                @if (string.Compare((string)@ViewData["Title"], "Your Rights, Your Life") != 0)
                 {
                     <ol class="breadcrumb">
+
                         <li><a asp-page="/Index">Choose your role</a></li>
-                        <li><a asp-page="/@ViewData["role"]">@ViewData["role"]</a></li>
+                        @if (!string.IsNullOrEmpty((string)ViewData["role"]))
+                        {
+                            <li><a asp-page="/@ViewData["role"]">@ViewData["role"]</a></li>
+                        }
                         <li><a>@ViewData["Title"]</a></li>
+                      
                     </ol>
                 }
-            </div>
+                </div>    
         </div>
         <nav class="navbar navbar-default col-sm-3 col-sm-push-9">
             <div class="navbar-header">

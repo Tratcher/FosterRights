@@ -5,9 +5,9 @@
 
 <div class="row">
     <div class="col-md-offset-3 col-md-3">
-        <a asp-page="/Caseworker" class="btn btn-card btn-primary">Caseworker Responsibilities</a>
+        <a asp-page="/Caseworker" asp-route-role="SocialWorker" class="btn btn-card btn-primary">Caseworker Responsibilities</a>
     </div>
     <div class="col-md-3">
-        <a asp-page="/Placement" class="btn btn-card btn-primary">Placement and Visitation</a>
+        <a asp-page="/Placement" asp-route-role="SocialWorker" class="btn btn-card btn-primary">Placement and Visitation</a>
     </div>
 </div>
