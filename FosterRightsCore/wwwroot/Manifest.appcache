@@ -1,0 +1,55 @@
+CACHE MANIFEST
+
+# First line of this file MUST be: CACHE MANIFEST
+
+# Learn more about this file with the links below:
+# https://www.html5rocks.com/en/tutorials/appcache/beginner/
+# https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
+# http://apress.jensimmons.com/v5/pro-html5-programming/ch12.html
+
+CACHE:
+# Pages
+About
+Attorney
+Caseworker
+Complaint
+Court
+Education
+Error
+FosterParent
+FosterYouth
+Glossary
+HealthCare
+Index
+Placement
+Privacy
+Resources
+Safety
+SocialWorker
+# CSS
+css/site.css
+css/site.min.css
+# Images
+images/advisor.jpg
+images/doctor.jpg
+images/DoSHSCAlogo.jpg
+images/foster_family.jpg
+images/MockingbirdLogoCMYK.png
+images/my_stuff.jpg
+images/old_friend.jpg
+images/p2alogo.jpg
+images/siblings.jpg
+images/smiling_youth.jpg
+images/tips_for_success.jpg
+images/youth.jpg
+# JS
+js/site.js
+js/site.min.js
+js/site.min.js.map
+
+NETWORK:
+# Allow files to come from the network
+*
+
+FALLBACK:
+
