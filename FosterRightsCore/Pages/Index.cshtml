@@ -3,6 +3,31 @@
 @{
     ViewData["Title"] = "Your Rights, Your Life";
 }
+<h2 class="text-center">Choose your role to find resources about foster rights</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <a asp-page="/FosterYouth" class="btn btn-card btn-primary">Foster Youth</a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a asp-page="/SocialWorker" class="btn btn-card btn-primary">Social Worker</a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a asp-page="/FosterParent" class="btn btn-card btn-primary">Foster Parent</a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a asp-page="/Attorney" class="btn btn-card btn-primary">Attorney</a>
+    </div>
+    <!--
+    <div class="col-xs-12">
+        <h1> A Resource Guide for Youth in Foster Care</h1>
+        <p style="margin-top: 12px">
+            This website is a resource to inform foster youth ages 12 and older of rights and policies that impact them during their time in foster care as outlined under Washington State Law.
+        </p>
+        <img src="~/images/foster_family.jpg" class="img-responsive" width="900" alt="Alternate Text" />
+    </div>
+    -->
+</div>
+
 <div id="myCarousel" class="carousel slide" dataride="carousel" datainterval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -52,28 +77,4 @@
         <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
-<h2 class="text-center">Choose your role to find resources about foster rights</h2>
-<div class="row">
-    <div class="col-sm-6 col-md-3">
-        <a asp-page="/FosterYouth" class="btn btn-card btn-primary">Foster Youth</a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-        <a asp-page="/SocialWorker" class="btn btn-card btn-primary">Social Worker</a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-        <a asp-page="/FosterParent" class="btn btn-card btn-primary">Foster Parent</a>
-    </div>
-    <div class="col-sm-6 col-md-3">
-        <a asp-page="/Attorney" class="btn btn-card btn-primary">Attorney</a>
-    </div>
-    <!--
-    <div class="col-xs-12">
-        <h1> A Resource Guide for Youth in Foster Care</h1>
-        <p style="margin-top: 12px">
-            This website is a resource to inform foster youth ages 12 and older of rights and policies that impact them during their time in foster care as outlined under Washington State Law.
-        </p>
-        <img src="~/images/foster_family.jpg" class="img-responsive" width="900" alt="Alternate Text" />
-    </div>
-    -->
 </div>
