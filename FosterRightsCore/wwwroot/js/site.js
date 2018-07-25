@@ -12,5 +12,5 @@
     const route = window.location.pathname;
 
     // Handler to set active class to navigation links (styling)
-    $(`a[href="${route}"]`).addClass(active);
+    $(`ul>li>a[href="${route}"]`).addClass(active);
 })(jQuery);
