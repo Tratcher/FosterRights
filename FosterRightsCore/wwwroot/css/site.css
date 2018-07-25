@@ -8,7 +8,7 @@ body {
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     padding-left: 20px;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 
@@ -35,7 +35,6 @@ li a :hover {
     padding-right: 0px;
 }
 
-/*Use dark colors for navigation bar*/
 
 /* page header*/
 .page-header {
@@ -44,6 +43,8 @@ li a :hover {
     color: white;
     margin-top: 0;
     padding: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .page-header .col-md-6 {
@@ -73,6 +74,12 @@ li a :hover {
 
 .gsc-control-cse.gsc-control-cse-en {
     padding: 12px 0;
+}
+
+#indexheader {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #333333;
 }
 
 /* Carousel */
@@ -119,7 +126,6 @@ h6 {
 
 .btn-card {
     align-items: center;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     height: 65px;
